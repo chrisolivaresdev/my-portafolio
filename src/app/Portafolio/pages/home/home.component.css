@@ -1,0 +1,65 @@
+.container{
+  width: 100%;
+  margin-top: 35px;
+}
+.container h1:first-child{
+    color: #f3f5f7;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-size: 16px;
+    margin: 0 0 0 35%;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 170%;
+    animation: type 2s steps (40,end) forwards;
+  }
+
+  .container h1:nth-child(2){
+    color: white;
+    opacity: 0;
+    font-family: "works Sans", sans-serif;
+    margin: 0 auto auto auto;
+    font-weight: 800;
+    font-size:35px;
+    width: 225px;
+    overflow: hidden;
+    animation: shring-animation 2.2s steps(48,end) 2s forwards, blink .5s step-end infinite alternate;
+  }
+
+  @keyframes shring-animation{
+    0%{
+        background-position: 0 0;
+        opacity: 0;
+        width:0;
+    }
+    1%{
+        background-position: 0 0;
+        opacity: 1;
+        border-right:1px solid #5f91ff;}
+    50%{
+        background-position: 150px 0;
+        opacity: 1;
+        border-right:1px solid #5f91ff;}
+
+    100%{
+        background-position: 400px 0;
+        opacity: 1;
+        border-right:1px solid #5f91ff;}
+}
+
+@keyframes type{
+    0%{
+        width:0;
+    }
+    1%, 99%{
+        border-right:1px solid #5f91ff;}
+
+    100%{
+        border-right:none;}
+}
+@keyframes blink{
+    50%{
+        border-color: transparent;
+    }
+}

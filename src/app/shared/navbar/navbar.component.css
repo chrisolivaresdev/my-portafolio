@@ -1,0 +1,39 @@
+nav{
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.icon-container{
+  display: flex;
+}
+
+.icon{
+  margin: 10px;
+  padding: 15px;
+  background-color:#fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius:50%;
+  transition:1s;
+  cursor: pointer;
+}
+
+.icon svg{
+  width:  20px;
+  height: 20px;
+}
+
+.active, .icon:hover{
+  background-color:#5f91ff;
+  transform:scale(1.1);
+}
+
+.active svg g{
+    fill:white;
+}
+
+
