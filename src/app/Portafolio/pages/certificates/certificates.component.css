@@ -1,0 +1,35 @@
+.Certifications-Title{
+  text-align: center;
+  margin-top:20px;
+  margin-bottom: 10px;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+}
+.card{
+  width: 200px;
+  height: 200px;
+  margin: 20px 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 25px rgba( 0, 0, 0, 0.2);
+  transition: 0.5s;
+  justify-self: center;
+}
+
+.card:last-child{
+  margin-bottom: 60px;
+}
+
+.card:hover{
+  filter: blur(0px);
+  transform: scale(1.1) ;
+  opacity: 1;
+}
+
+.card a img{
+  width: 200px;
+  height: 200px;
+}

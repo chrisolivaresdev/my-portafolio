@@ -7,7 +7,6 @@
   align-content: center;
 }
 .container-presentation h1:first-child{
-    color: #f3f5f7;
     font-family: 'Rufina', serif;
     text-align: center;
     font-weight: 800;
@@ -18,9 +17,8 @@
   }
 
   .container-presentation h1:nth-child(2){
-    color: white;
     opacity: 0;
-    font-family: 'Rufina', serif;
+
     text-align: center;
     font-weight: 800;
     font-size:28px;
@@ -34,10 +32,7 @@
   .personal-information p{
     padding: 10px;
     margin-top: 30px;
-    color: rgba(235, 232, 232, 0.918);
-    font-family: 'Rufina', serif;
     text-align: center;
-
   }
   .social-networks{
     margin-top: 20px;
@@ -46,8 +41,6 @@
   .social-networks h2{
     font-size: 28px;
     margin-left: 25%;
-    color: rgba(235, 232, 232, 0.918);
-
   }
 
   .rotate-words{
@@ -56,11 +49,10 @@
   }
 
   .rotate-words span{
-    width:max-content;
+
     font-size: 20px;
     position: absolute;
     background-color:#5f91ff;
-    color: rgba(235, 232, 232, 0.918);
     border-radius: 10px;
     padding-inline: 10px;
     opacity:0;
@@ -73,8 +65,6 @@
 /*==================== SKILLS ====================*/
 
 .skills__name, .skill__number{
-  font-family:'Rufina', sans ;
-  color: rgba(235, 232, 232, 0.918);
   font-weight: 700;
 }
 
@@ -115,6 +105,7 @@
 }
 
 .skills__list{
+  margin-top:50px;
   margin-bottom: 55px;
 }
 
@@ -180,3 +171,4 @@
     rotate:(10deg);
   }
 }
+
