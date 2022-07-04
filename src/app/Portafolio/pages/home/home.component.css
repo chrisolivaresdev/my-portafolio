@@ -5,13 +5,11 @@
 .container h1:first-child{
     color: #f3f5f7;
     font-family: 'Times New Roman', Times, serif;
+    text-align: center;
     font-weight: 800;
     font-size: 16px;
-    margin: 0 0 0 35%;
-    text-align: left;
     white-space: nowrap;
     overflow: hidden;
-    /* width: 170%; */
     animation: type 2s steps (40,end) forwards;
   }
 
