@@ -17,10 +17,8 @@
     color: white;
     opacity: 0;
     font-family: "works Sans", sans-serif;
-    margin: 0 auto auto auto;
     font-weight: 800;
     font-size:35px;
-    width: 225px;
     overflow: hidden;
     animation: shring-animation 2.2s steps(48,end) 2s forwards, blink .5s step-end infinite alternate;
   }
@@ -56,6 +54,7 @@
     100%{
         border-right:none;}
 }
+
 @keyframes blink{
     50%{
         border-color: transparent;
