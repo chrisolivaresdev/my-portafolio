@@ -1,6 +1,6 @@
 .container-presentation{
   width: 100%;
-  margin-top: 30px;
+  margin-top: 20px;
   display:flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -33,14 +33,14 @@
 
   .personal-information p{
     padding: 10px;
-    margin-top: 20px;
+    margin-top: 30px;
     color: rgba(235, 232, 232, 0.918);
     font-family: 'Rufina', serif;
     text-align: center;
 
   }
   .social-networks{
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   .social-networks h2{
@@ -69,6 +69,60 @@
     var(--d) linear infinite;
 
   }
+
+/*==================== SKILLS ====================*/
+
+.skills__name, .skill__number{
+  font-family:'Rufina', sans ;
+  color: rgba(235, 232, 232, 0.918);
+  font-weight: 700;
+}
+
+
+.skills__bar,
+.skills__percentage{
+  height: 5px;
+  border-radius: .25rem;
+}
+
+.skills__bar{
+  background-color: rgba(235, 232, 232, 0.918);
+}
+
+.skills__percentage{
+  display: block;
+  background-color: #5f91ff;
+}
+
+.skills__html{
+  width: 90%;
+}
+
+.skills__css{
+  width: 80%;
+}
+.skills__javascript{
+  width: 80%;
+}
+.skills__angular{
+  width: 80%;
+}
+
+.skills__list{
+  margin-top: 20px;
+  padding:20px;
+  overflow: hidden;
+}
+
+.skills__list{
+  height: max-content;
+}
+
+.grid{
+  display: grid;
+  gap: 1.5rem;
+}
+
 
 
 
