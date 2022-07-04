@@ -114,9 +114,20 @@
 
 @keyframes shooting {
   0% {
-    transform: translateX(0);
+    transform: translateX(50px);
   }
   100% {
-    transform: translateX(150px);
+    transform: translateX(300px);
+  }
+}
+
+@media (max-width: 300px ) {
+  @keyframes shooting {
+    0% {
+      transform: translateX(50px);
+    }
+    100% {
+      transform: translateX(150px);
+    }
   }
 }
