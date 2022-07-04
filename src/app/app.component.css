@@ -15,7 +15,7 @@
 .star {
   position: absolute;
   top: 50%;
-  left: 50%;
+  /* left: 50%; */
   height: 2px;
   background: linear-gradient(-45deg, #5f91ff, rgba(0, 0, 255, 0));
   filter: drop-shadow(0 0 6px #699bff);
@@ -41,7 +41,7 @@
 
 .star:nth-child(1) {
   top: calc(50% - 200px);
-  left: calc(50% - 100px);
+  /* left: calc(50% - 100px); */
   animation-delay: 650ms;
 }
 .star:nth-child(1)::before, .star:nth-child(1)::after {
@@ -50,7 +50,7 @@
 
 .star:nth-child(2) {
   top: calc(50% - -50px);
-  left: calc(50% - 190px);
+  /* left: calc(50% - 190px); */
   animation-delay: 150ms;
 }
 .star:nth-child(2)::before, .star:nth-child(2)::after {
@@ -59,7 +59,7 @@
 
 .star:nth-child(3) {
   top: calc(50% - -90px);
-  left: calc(50% - 200px);
+  /* left: calc(50% - 200px); */
   animation-delay: 1600ms;
 }
 .star:nth-child(3)::before, .star:nth-child(3)::after {
@@ -68,7 +68,7 @@
 
 .star:nth-child(4) {
   top: calc(50% - 50px);
-  left: calc(50% - 250px);
+  /* left: calc(50% - 250px); */
   animation-delay: 4700ms;
 }
 .star:nth-child(4)::before, .star:nth-child(4)::after {
@@ -77,7 +77,7 @@
 
 .star:nth-child(5) {
   top: calc(50% - -190px);
-  left: calc(50% - 200px);
+  /* left: calc(50% - 200px); */
   animation-delay: 2100ms;
 }
 .star:nth-child(5)::before, .star:nth-child(5)::after {

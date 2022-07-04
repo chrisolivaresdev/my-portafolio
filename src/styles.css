@@ -4,7 +4,7 @@
 }
 
 body {
-  height: fit-content;
+  height: 100vh;
   background: linear-gradient(125deg, #6a757e 0%,  #3e4966 100%);
   background-repeat: no-repeat;
   background-size: cover;

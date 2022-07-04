@@ -11,7 +11,7 @@
     text-align: left;
     white-space: nowrap;
     overflow: hidden;
-    width: 170%;
+    /* width: 170%; */
     animation: type 2s steps (40,end) forwards;
   }
 
