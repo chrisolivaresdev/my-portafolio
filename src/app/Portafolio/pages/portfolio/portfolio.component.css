@@ -1,21 +1,60 @@
 @import "swiper/swiper-bundle";
-
-
+.container-Portfolio{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+.container-Portfolio{
+  margin-top: 20px;
+}
 
 .swiper {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
 }
 
 .swiper-slide {
-
   background: #5f91ff;
 }
 
 .swiper-cube{
+  margin-top: 50px;
 
-  margin-top: 30px;
-  width: 200px;
-  height: 200px;
 }
 
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+}
+
+
+
+
+@media(min-width:540px){
+  .swiper {
+    width: 300px;
+    height: 300px;
+  }
+
+}
+
+@media(min-width:760px){
+  .swiper {
+    width: 350px;
+    height: 350px;
+  }
+
+ .container-Portfolio h1{
+      font-size: 35px;
+  }
+}
+
+
+@media(min-width:1024px){
+  .swiper {
+    width: 400px;
+    height: 400px;
+  }
+}

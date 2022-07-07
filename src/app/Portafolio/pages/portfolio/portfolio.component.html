@@ -1,24 +1,15 @@
-<div class="contenedor">
-<swiper
-[effect]="'cube'"
-[grabCursor]="true"
-[cubeEffect]="{
+<div class="container-Portfolio">
+    <h1>Portafolio</h1>
+  <swiper [effect]="'cube'" [grabCursor]="true" [cubeEffect]="{
   shadow: true,
   slideShadows: true,
   shadowOffset: 20,
   shadowScale: 0.94
-}"
-[pagination]="true"
-class="mySwiper"
->
-<ng-template swiperSlide
-  ><img /></ng-template
-><ng-template swiperSlide
-  ><img  /></ng-template
-><ng-template swiperSlide
-  ><img/></ng-template
-><ng-template swiperSlide
-  ><img
-/></ng-template>
-</swiper>
+}" [pagination]="true" class="mySwiper">
+    <ng-template swiperSlide> </ng-template>
+    <ng-template swiperSlide></ng-template>
+    <ng-template swiperSlide></ng-template>
+    <ng-template swiperSlide></ng-template>
+    <ng-template swiperSlide></ng-template>
+  </swiper>
 </div>

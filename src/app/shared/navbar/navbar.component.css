@@ -48,3 +48,23 @@ nav{
 }
 
 
+@media (min-width: 768px ){
+.icon-container{
+flex-direction: column;
+justify-content: center;
+}
+
+.nav{
+  width: initial;
+  justify-content: initial;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+  .icon svg{
+    width:  20px;
+    height: 20px;
+  }
+}
+

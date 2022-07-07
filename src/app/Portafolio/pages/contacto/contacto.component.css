@@ -1,10 +1,12 @@
 .container {
-  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.section__title{
+  margin-top: 20px;
+}
 .section__subtitle{
   margin-top: 20px;
   text-align: center;
@@ -49,4 +51,39 @@
 }
 .contact__subtitle{
   font-size: 14px;
+}
+
+
+@media(min-width:540px){
+  .contact__container{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+
+@media(min-width:768px){
+  .contact__container{
+    grid-template-columns: repeat(3,1fr);
+  }
+  .section__title{
+    font-size: 35px;
+  }
+
+  .section__subtitle{
+    margin-top:30px;
+    font-size: 20px;
+  }
+
+ .contact__container{
+        margin-top: 40px;
+  }
+
+  .contact__title{
+    font-size:20px;
+  }
+
+  .contact__subtitle{
+    font-size:16px;
+  }
+
 }

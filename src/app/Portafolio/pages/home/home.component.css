@@ -6,7 +6,9 @@
   flex-wrap: wrap;
   align-content: center;
 }
+
 .container-presentation h1:first-child{
+    margin-top: 20px;
     font-family: 'Rufina', serif;
     text-align: center;
     font-weight: 800;
