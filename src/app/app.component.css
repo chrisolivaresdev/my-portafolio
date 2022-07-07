@@ -6,6 +6,8 @@
 .header{
   display: flex;
   justify-content:center;
+  animation: fade;
+  animation-duration: 2s;
 }
 
 .logo-img{
@@ -82,7 +84,20 @@
 }
 
 
+
 /* Animations */
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
 @keyframes tail {
   0% {
     width: 0;
@@ -174,6 +189,12 @@
       transform: translateX(590px);
     }
 
+  }
+}
+
+@media(min-width:768px){
+  .logo-img{
+      width: 100px;
   }
 }
 
