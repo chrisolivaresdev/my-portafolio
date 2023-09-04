@@ -16,7 +16,7 @@
 
 .star {
   position: fixed;
-  left: 33%;
+  /* left: 33%; */
   top: 50%;
   height: 2px;
   background: linear-gradient(-45deg, #5f91ff, rgba(0, 0, 255, 0));
