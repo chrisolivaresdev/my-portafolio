@@ -24,7 +24,7 @@ const routes: Routes = [
     component: PortfolioComponent
   },
   {
-    path:'Contacto',
+    path:'Contact',
     component: ContactoComponent
   }
 ];

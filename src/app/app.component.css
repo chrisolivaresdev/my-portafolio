@@ -18,7 +18,6 @@
 .star {
   position: absolute;
   top: 50%;
-
   height: 2px;
   background: linear-gradient(-45deg, #5f91ff, rgba(0, 0, 255, 0));
   filter: drop-shadow(0 0 6px #699bff);

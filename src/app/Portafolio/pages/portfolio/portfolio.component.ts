@@ -1,16 +1,14 @@
-import { Component, ViewEncapsulation} from "@angular/core";
+import { Component, OnInit} from "@angular/core";
 
-import SwiperCore, { EffectCube, Pagination } from "swiper";
 
-SwiperCore.use([EffectCube, Pagination]);
+
 
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.css'],
-  encapsulation: ViewEncapsulation.None,
+  styleUrls: ['./portfolio.component.css']
 })
-export class PortfolioComponent{
+export class PortfolioComponent implements OnInit{
 
 
 
