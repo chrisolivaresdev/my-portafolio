@@ -1,7 +1,6 @@
 .container{
   max-width: 1400px;
   margin: 0 auto;
-
 }
 .header{
   display: flex;
@@ -16,7 +15,8 @@
 }
 
 .star {
-  position: absolute;
+  position: fixed;
+  left: 33%;
   top: 50%;
   height: 2px;
   background: linear-gradient(-45deg, #5f91ff, rgba(0, 0, 255, 0));
@@ -25,7 +25,7 @@
 }
 
 .star::before, .star::after {
-  position: absolute;
+  position: fixed;
   content: '';
   top: calc(50% - 1px);
   right: 0;
@@ -144,17 +144,6 @@
 
 }
 
-@media (max-width: 300px ) {
-  @keyframes shooting {
-    0% {
-      transform: translateX(20%);
-    }
-    100% {
-      transform: translateX(80%);
-    }
-  }
-
-}
 
 @media (min-width: 500px ) {
   @keyframes shooting {
@@ -167,7 +156,10 @@
 
   }
 
+}
+
   @media (min-width: 600px ) {
+
     @keyframes shooting {
       0% {
         transform: translateX(100px);
@@ -252,7 +244,4 @@
       transform: translateX(1090px);
     }
   }
-}
-
-
 }

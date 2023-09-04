@@ -1,8 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Certificate } from '../interfaces/certificate.interface';
 
 @Component({
+  standalone:true,
   selector: 'app-certificates',
+  imports:[CommonModule],
   templateUrl: './certificates.component.html',
   styleUrls: ['./certificates.component.css']
 })

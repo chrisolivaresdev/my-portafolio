@@ -5,286 +5,40 @@
 <section class="portfolio">
   <div class="container">
     <div class="portfolio__grid">
-      <div class="portfolio__item">
-        <picture>
-          <source type="image/jpeg" srcset="./assets/Projects/vierafloors-min.png" />
-          <img class="portfolio__img" alt="portfolio item" />
-        </picture>
-        <div class="portfolio__description">
-          <h3 class="portfolio__description--title">VieraFloors</h3>
-          <p class="portfolio__description--text">
-            Aplicacion web: HTMl, CSS, Javascript.
-          </p>
-          <div class="buttons__container">
-            <a
-              class="button"
-              href="https://vierafloor.com/"
-              target="_blank">
-              <i class="fas fa-globe-americas"></i> Sitio Web
-            </a>
+      <ng-container *ngFor="let portfolio of portfolios">
+        <div class="portfolio__item">
+          <picture>
+            <source type="image/jpeg" [srcset]="portfolio.src" />
+            <img class="portfolio__img" alt="portfolio item" />
+          </picture>
+          <div class="portfolio__description">
+            <h3 class="portfolio__description--title">{{portfolio.title}}</h3>
+            <p class="portfolio__description--text">
+              {{portfolio.description}}
+            </p>
+            <p class="portfolio__description--text" *ngIf="portfolio.credentiales">
+              {{portfolio.credentiales}}
+            </p>
+            <div class="buttons__container">
+              <a
+                class="button"
+                [href]="portfolio.web"
+                target="_blank">
+                <i class="fas fa-globe-americas"></i> Sitio Web
+              </a>
+              <a
+              *ngIf="portfolio.repo"
+                class="button"
+                [href]="portfolio.repo"
+                target="_blank">
+                <i class="fab fa-github"></i> Repositorio
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="portfolio__item">
-        <picture>
-          <source type="image/jpeg" srcset="./assets/Projects/Simon.jfif" />
-          <img class="portfolio__img" alt="portfolio item" />
-        </picture>
-        <div class="portfolio__description">
-          <h3 class="portfolio__description--title">Simon dice</h3>
-          <p class="portfolio__description--text">
-            Aplicacion web: HTMl, CSS, Javascript.
-          </p>
-          <div class="buttons__container">
-            <a
-              class="button"
-              href="https://chrisolivaresdev.github.io/Simon-dice/"
-              target="_blank">
-              <i class="fas fa-globe-americas"></i> Sitio Web
-            </a>
-            <a
-              class="button"
-              href="https://github.com/chrisolivaresdev/Simon-dice"
-              target="_blank">
-              <i class="fab fa-github"></i> Repositorio
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="portfolio__item">
-        <picture>
-          <source type="image/jpeg" srcset="./assets/Projects/accordion-faq-min.jpg" />
-          <img class="portfolio__img" alt="portfolio item" />
-        </picture>
-        <div class="portfolio__description">
-          <h3 class="portfolio__description--title">Accordion-Faq</h3>
-          <p class="portfolio__description--text">
-            Aplicacion web: HTMl, CSS, Javascript.
-          </p>
-          <div class="buttons__container">
-            <a
-              class="button"
-              href="https://chrisolivaresdev.github.io/Accordion-Frontend-Mentor/"
-              target="_blank">
-              <i class="fas fa-globe-americas"></i> Sitio Web
-            </a>
-            <a
-              class="button"
-              href="https://github.com/chrisolivaresdev/Simon-dice"
-              target="_blank">
-              <i class="fab fa-github"></i> Repositorio
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="portfolio__item">
-        <picture>
-          <source type="image/jpeg" srcset="./assets/Projects/batatabit-min.png" />
-          <img class="portfolio__img" alt="portfolio item" />
-        </picture>
-        <div class="portfolio__description">
-          <h3 class="portfolio__description--title">BatataBit</h3>
-          <p class="portfolio__description--text">
-            Aplicacion web: HTMl, CSS.
-          </p>
-          <div class="buttons__container">
-            <a
-              class="button"
-              href="https://chrisolivaresdev.github.io/batatabit/"
-              target="_blank">
-              <i class="fas fa-globe-americas"></i> Sitio Web
-            </a>
-            <a
-              class="button"
-              href="https://github.com/chrisolivaresdev/batatabit"
-              target="_blank">
-              <i class="fab fa-github"></i> Repositorio
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="portfolio__item">
-        <picture>
-          <source type="image/jpeg" srcset="./assets/Projects/Ping-min.jpg" />
-          <img class="portfolio__img" alt="portfolio item" />
-        </picture>
-        <div class="portfolio__description">
-          <h3 class="portfolio__description--title">ping-comming-soon</h3>
-          <p class="portfolio__description--text">
-            Aplicacion web: HTMl, CSS, Javascript.
-          </p>
-          <div class="buttons__container">
-            <a
-              class="button"
-              href="https://chrisolivaresdev.github.io/ping-comming-soon-Frontend-Mentor/"
-              target="_blank">
-              <i class="fas fa-globe-americas"></i> Sitio Web
-            </a>
-            <a
-              class="button"
-              href="https://github.com/chrisolivaresdev/ping-comming-soon-Frontend-Mentor"
-              target="_blank">
-              <i class="fab fa-github"></i> Repositorio
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="portfolio__item">
-        <picture>
-          <source type="image/jpeg" srcset="./assets/Projects/Google-clone-min.png" />
-          <img class="portfolio__img" alt="portfolio item" />
-        </picture>
-        <div class="portfolio__description">
-          <h3 class="portfolio__description--title">Google Clone</h3>
-          <p class="portfolio__description--text">
-            Aplicacion web: HTMl, CSS.
-          </p>
-          <div class="buttons__container">
-            <a
-              class="button"
-              href="https://chrisolivaresdev.github.io/clone_google/"
-              target="_blank">
-              <i class="fas fa-globe-americas"></i> Sitio Web
-            </a>
-            <a
-              class="button"
-              href="https://github.com/chrisolivaresdev/clone_google"
-              target="_blank">
-              <i class="fab fa-github"></i> Repositorio
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="portfolio__item">
-        <picture>
-          <source type="image/jpeg" srcset="./assets/Projects/Rick-And-Morthy-min.png" />
-          <img class="portfolio__img" alt="portfolio item" />
-        </picture>
-        <div class="portfolio__description">
-          <h3 class="portfolio__description--title">Single Page Aplication</h3>
-          <p class="portfolio__description--text">
-            Aplicacion web: HTMl, CSS, Javascript.
-          </p>
-          <div class="buttons__container">
-            <a
-              class="button"
-              href="https://chrisolivaresdev.github.io/spa/"
-              target="_blank">
-              <i class="fas fa-globe-americas"></i> Sitio Web
-            </a>
-            <a
-              class="button"
-              href="https://github.com/chrisolivaresdev/spa"
-              target="_blank">
-              <i class="fab fa-github"></i> Repositorio
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="portfolio__item">
-        <picture>
-          <source type="image/jpeg" srcset="./assets/Projects/Product-preview-min.jpg" />
-          <img class="portfolio__img" alt="portfolio item" />
-        </picture>
-        <div class="portfolio__description">
-          <h3 class="portfolio__description--title">Product card</h3>
-          <p class="portfolio__description--text">
-            Aplicacion web: HTMl, CSS.
-          </p>
-          <div class="buttons__container">
-            <a
-              class="button"
-              href="https://chrisolivaresdev.github.io/product-card-frontend-Mentor/"
-              target="_blank">
-              <i class="fas fa-globe-americas"></i> Sitio Web
-            </a>
-            <a
-              class="button"
-              href="https://github.com/chrisolivaresdev/product-card-frontend-Mentor"
-              target="_blank">
-              <i class="fab fa-github"></i> Repositorio
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="portfolio__item">
-        <picture>
-          <source type="image/jpeg" srcset="./assets/Projects/four-cards-section-min.jpg" />
-          <img class="portfolio__img" alt="portfolio item" />
-        </picture>
-        <div class="portfolio__description">
-          <h3 class="portfolio__description--title">four card section</h3>
-          <p class="portfolio__description--text">
-            Aplicacion web: HTMl, CSS.
-          </p>
-          <div class="buttons__container">
-            <a
-              class="button"
-              href="https://chrisolivaresdev.github.io/four-card-section/"
-              target="_blank">
-              <i class="fas fa-globe-americas"></i> Sitio Web
-            </a>
-            <a
-              class="button"
-              href="https://github.com/chrisolivaresdev/four-card-section"
-              target="_blank">
-              <i class="fab fa-github"></i> Repositorio
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="portfolio__item">
-        <picture>
-          <source type="image/jpeg" srcset="./assets/Projects/Profile-card-min.jpg" />
-          <img class="portfolio__img" alt="portfolio item" />
-        </picture>
-        <div class="portfolio__description">
-          <h3 class="portfolio__description--title">Profile card</h3>
-          <p class="portfolio__description--text">
-            Aplicacion web: HTMl, SASS.
-          </p>
-          <div class="buttons__container">
-            <a
-              class="button"
-              href="https://chrisolivaresdev.github.io/profile-card/"
-              target="_blank">
-              <i class="fas fa-globe-americas"></i> Sitio Web
-            </a>
-            <a
-              class="button"
-              href="https://github.com/chrisolivaresdev/profile-card"
-              target="_blank">
-              <i class="fab fa-github"></i> Repositorio
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="portfolio__item">
-        <picture>
-          <source type="image/jpeg" srcset="./assets/Projects/Social-Media-Dashboard-min.png" />
-          <img class="portfolio__img" alt="portfolio item" />
-        </picture>
-        <div class="portfolio__description">
-          <h3 class="portfolio__description--title">Social Dashboard</h3>
-          <p class="portfolio__description--text">
-            Aplicacion web: HTMl, CSS, Javascript.
-          </p>
-          <div class="buttons__container">
-            <a
-              class="button"
-              href="https://chrisolivaresdev.github.io/dark-mode/"
-              target="_blank">
-              <i class="fas fa-globe-americas"></i> Sitio Web
-            </a>
-            <a
-              class="button"
-              href="https://github.com/chrisolivaresdev/dark-mode"
-              target="_blank">
-              <i class="fab fa-github"></i> Repositorio
-            </a>
-          </div>
-        </div>
-      </div>
+      </ng-container>
+
+
     </div>
   </div>
 </section>

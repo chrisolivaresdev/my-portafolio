@@ -4,7 +4,7 @@
     <ng-container *ngFor="let certification of certifications,">
       <div class="card">
         <a [href]="certification.href" target="_blank" >
-          <img ngSrc="{{certification.src}}" [alt]="certification.alt"></a>
+          <img  [src]="certification.src" lazyLoad loading="lazy" [alt]="certification.alt"></a>
       </div>
     </ng-container>
 

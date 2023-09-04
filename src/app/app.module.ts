@@ -1,11 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
-import { NgOptimizedImage } from '@angular/common'
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './shared/navbar/navbar.component';
 
-import { PortafolioModule } from './Portafolio/portafolio.module';
-import { SharedModule } from './shared/shared.module';
 
 
 @NgModule({
@@ -15,9 +13,7 @@ import { SharedModule } from './shared/shared.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule,
-    PortafolioModule,
-    NgOptimizedImage
+    NavbarComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

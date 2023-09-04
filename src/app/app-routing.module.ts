@@ -12,20 +12,23 @@ import { ContactoComponent } from './Portafolio/pages/contacto/contacto.componen
 const routes: Routes = [
   {
     path:'',
-    component: HomeComponent,
+    loadComponent: ()=> import('./Portafolio/pages/home/home.component').then( C => C.HomeComponent ),
     pathMatch: 'full'
   },
   {
     path:'Certificates',
-    component: CertificatesComponent
+    loadComponent: ()=> import('./Portafolio/pages/certificates/certificates.component').then( C => C.CertificatesComponent ),
+
   },
   {
     path:'Portfolio',
-    component: PortfolioComponent
+    loadComponent: ()=> import('./Portafolio/pages/portfolio/portfolio.component').then( C => C.PortfolioComponent ),
+
   },
   {
     path:'Contact',
-    component: ContactoComponent
+    loadComponent: ()=> import('./Portafolio/pages/contacto/contacto.component').then( C => C.ContactoComponent ),
+
   }
 ];
 
